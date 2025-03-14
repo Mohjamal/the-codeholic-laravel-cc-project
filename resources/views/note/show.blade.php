@@ -1,4 +1,4 @@
-<x-layout>
+<x-app-layout>
 
     <div class="note-container single-note">
         <a href="{{ route('note.index') }}" class="note-edit-button">Home Page</a>
@@ -22,4 +22,4 @@
             </div>
         </div>
     </div>
-</x-layout>
+</x-app-layout>

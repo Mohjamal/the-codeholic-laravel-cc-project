@@ -1,19 +1,15 @@
-/*
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*/
 
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .note-container {
     max-width: 980px;
     margin: 0 auto;
 }
-
 .new-note-btn {
     width: 200px;
     display: block;
@@ -30,23 +26,19 @@
     text-decoration: none;
     color: #1e1e1e;
 }
-
 .new-note-btn:hover {
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
 }
-
 .new-note-btn:active {
     position: relative;
     top: 1px;
 }
-
 .notes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
-
 .note {
     background-color: #f0c806;
     border-radius: 8px;
@@ -65,16 +57,13 @@
     font-size: 24px;
     padding: 10px 16px 16px;
 }
-
 .notes .note:hover {
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
-
 .single-note .note {
     margin: 0;
     width: 100%;
 }
-
 .single-note .note .note-body {
     background-color: transparent;
     width: 100%;
@@ -83,22 +72,18 @@
     resize: none;
     padding: 20px;
 }
-
 .single-note .note .note-body::placeholder {
     color: #111111;
 }
-
 .note .note-buttons {
-    opacity: 1;
+    opacity: 0;
 }
-
 .note:hover .note-buttons {
     opacity: 1;
 }
-
 .note-buttons {
     text-align: right;
-    padding: 16px;
+    padding: 10px;
     display: flex;
     gap: 5px;
     justify-content: end;
@@ -107,16 +92,15 @@
 .note-buttons .note-cancel-button {
     padding: 6px 10px;
     border-radius: 4px;
-    color: inherit;
     background-color: #e0e0e0;
     border: 1px solid #bdbdbd;
     transition: all 0.3s;
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
     display: inline-block;
     font-size: 16px;
 }
-
 .note-buttons .note-cancel-button:hover {
     background-color: #ffffff;
 }
@@ -133,7 +117,6 @@
     display: inline-block;
     font-size: 16px;
 }
-
 .note-buttons .note-submit-button:hover {
     background-color: #704300;
 }
@@ -156,7 +139,6 @@
     display: inline-block;
     font-size: 16px;
 }
-
 .note-buttons .note-edit-button:hover {
     background-color: #0059b3;
 }
@@ -173,11 +155,9 @@
     display: inline-block;
     font-size: 16px;
 }
-
 .note-buttons .note-delete-button:hover {
     background-color: #a82f2f;
 }
-
 .note-date {
     margin-top: 20px;
     font-size: 13px;
